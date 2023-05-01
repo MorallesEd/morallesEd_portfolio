@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color-white: #ffffff;
+    --color-dark-blue: #000c3c;
+    --color-light-blue: #78abdd;
+    --color-orange: #da7b13;  
+    --font-button-icon: 1.59rem;
+    --font-source-title-content: 4.5rem;
+    --font-source-subtitle-content: 2rem;
+    --font-source-text-content: 1.5rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{    
+    font-family: 'Saira Extra Condensed', sans-serif;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 140px 10px 30px 10px;
+    background-color: var(--color-orange);
+    transition: all 0.35s;
+}
+
+.sidebar-header{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.logo-img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s;
+    margin-left: 5px;
+}
+
+.logo-img:hover{
+    transform: scale(1.5);
+}
+
+.sidebar button{
+    height: 60px;
+    background: transparent;   
+    border: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer; 
+    text-align: left;
+}
+
+.sidebar button > span{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0 16px 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.sidebar button:hover > span{
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar button i{
+    position: relative;
+    font-size: var(--font-button-icon);
+    transition: 0.2s;
+}
+
+.sidebar button span{
+    font-size: var(--font-button-icon);
+    color: var(--color-white);
+}
+
+.sidebar > nav{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main{
+    margin-left: 250px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+section.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 50px;
+}
+
+div.boxContent{
+    width: 100%;
+}
+
+h1{
+    font-size: 9rem;
+    line-height: 1;
+}
+
+h1 span.surname{
+    color: var(--color-orange);
+}
+
+div.subtitle{
+    margin-bottom: 48px;
+    font-size: 1.59rem;
+}
+
+div.boxContent p{
+    margin-bottom: 48px;
+    font-size: 1.15rem;
+}
+
+div.socialIcons{
+    width: 100%;
+}
+
+a.icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+h2{
+    font-size: var(--font-source-title-content);
+    line-height: 1;
+    margin-bottom: 48px;
+}
+
+h3{
+    font-size: var(--font-source-subtitle-content);
+    line-height: 1;
+    margin-bottom: 48px;
+}
+
+div.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.itemContent{
+    /*margin-top: 12px;*/
+    color: var(--color-orange);
+}
+
+div.toolsIcons{
+    display: flex;
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 4rem;
+    color:var(--color-orange);      
+}
+
+div.toolIcon{
+    margin-right: 1.3rem;
+}
+
+div.boxContent p.certificate{
+    margin-bottom: 20px;
+    font-size: 1.15rem;
+}
+
+i.fa-solid.fa-award{
+    margin-right: 8px;
+    color: var(--color-orange);
+}    
+
+
+
+@media (width < 920px){
+    .sidebar{
+        width: 72px;
+    }
+
+    .sidebar button > span{
+        width: 50px;
+    }
+
+    .sidebar button > span > span{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    section#sobre.box, section#certificado.box{
+        padding: 77px 50px;
+    }
+
+    .main{
+        transition: margin 0.4s;
+        margin-left: 78px;
+    }
+}
+
+.button-mobile{
+    display: none;
+    align-items: flex-start;
+    align-items: center;
+    margin: 16px;
+    background: transparent;
+    color: var(--color-white);
+    border: 0;
+}
+
+.button-mobile span{
+    font-size: 24px;
+    margin-left: 8px;
+}
+
+.button-close span i{
+    font-size: 42px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu-mobile-active{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-dark-blue);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.menu-mobile-active button{
+    background: transparent;
+    border: 0;
+    color: inherit;
+    margin-bottom: 16px;
+}
+
+.menu-mobile-active button > span{
+    display: inline-flex;
+    align-items: center;
+}
+
+.mobile-text{
+    font-size: 22px;
+    margin-left: 8px;
+    color: var(--color-white);
+}
+
+i.material-symbols-outlined{
+    color: var(--color-white);
+}
+
+button#backToTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    background: transparent;
+    color: var(--color-orange);
+}
+
+@media (max-width: 640px){
+    .sidebar{
+        display: none;
+    }
+
+    .button-mobile{
+        display: flex;
+    }
+
+    .main{
+        margin-left: 6px;
+    }
+
+}
+
+@media (max-width: 540px){
+    section#sobre.box, section#certificado.box{
+        padding: 30px 50px;
+    }
+
+    h1{
+        font-size: 7rem;
+    }
+
+    section#habilidade.box > div.boxContent > div.content{
+        display: block;        
+    }
+
+    div.toolsIcons{
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 414px){
+    h1{
+        font-size: 4.9rem;
+    }
+
+    section#sobre.box > div.boxContent > div.subtitle{
+        margin-bottom: 16px;
+    }
+
+    section#sobre.box > div.boxContent > p{
+        margin-bottom: 20px;
+    }
+
+    section#sobre.box > div.socialIcons > a.icon{
+        height: 2.5rem;
+        width: 2.5rem;       
+    }
+
+    div.toolsIcons{
+        font-size: 2rem;
+    }    
+}
+
+@media (max-width: 393px){
+    h1{
+        font-size: 4.6rem;
+    }
+
+    section#certificado.box > div.boxContent > h2{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 375px){
+    h1{
+        font-size: 4.3rem;
+    }
+
+    section#sobre.box > div.boxContent > div.subtitle{
+        font-size: 1.49rem;
+    }
+
+    section#sobre.box > div.socialIcons > a.icon{
+        margin-right: 1.4rem;
+    }
+
+    section#habilidade.box > div.boxContent > h2{
+        font-size: 4.2rem;
+    }
+
+    div.toolIcon{
+        margin-right: 1.1rem;
+    }
+
+    section#certificado.box > div.boxContent > h2{
+        font-size: 3.8rem;
+    }    
+}
+
+@media (max-width: 360px){
+    section#sobre.box{
+        padding: 10px 50px;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    section#sobre.box > div.socialIcons > a.icon{
+        margin-right: 1.2rem;
+    }
+}
+
+@media (max-width: 280px){
+
+    section#sobre.box{
+        padding: 0 50px;
+    }
+
+    h1{
+        font-size: 2.7rem;
+    }
+
+    section#sobre.box > div.boxContent > div.subtitle{
+        font-size: 1.15rem;
+        margin-bottom: 0;
+    }
+
+    section#sobre.box > div.socialIcons > a.icon{
+        margin-right: 0;
+    }
+
+    section#educacao.box{
+        padding: 60px 50px;
+    }
+
+    section#educacao.box > div.boxContent > h2{
+        font-size: 3.4rem;
+    }
+
+    section#educacao.box > div.boxContent > div.content > div > h3{
+        font-size: 1.4rem;
+    }
+
+    section#habilidade.box > div.boxContent > h2{
+        font-size: 2.7rem;
+    }
+
+    section#habilidade.box > div.boxContent > div.content > div > div.toolsIcons{
+        font-size: 1.6rem;
+    }
+
+    section#habilidade.box > div.boxContent > div.content > div > div.toolsIcons > div.toolIcon{
+        margin-right: 0.3rem;
+    }
+
+    section#certificado.box > div.boxContent > h2{
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+    }
+}

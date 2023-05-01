@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ed Morales</title>
+        <link rel="shortcut icon" href="./assets/img/newLogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+    </head>
+    <body>
+        <aside class="sidebar">
+            <header class="sideba-header">
+                <img class="logo-img" src="./assets/img/b1.png" alt="">
+            </header>
+            <nav>
+                <a href="#sobre"><button>
+                    <span>
+                        <i class="material-symbols-outlined">person</i>
+                        <span>SOBRE</span>
+                    </span>
+                </button></a>
+                
+                <a href="#educacao"><button>
+                    <span>
+                        <i class="material-symbols-outlined">school</i>
+                        <span>EDUCAÇÃO</span>
+                    </span>
+                </button></a>
+
+                <a href="#habilidade"><button>
+                    <span>
+                        <i class="material-symbols-outlined">construction</i>
+                        <span>HABILIDADES</span>
+                    </span>
+                </button></a>
+                
+                <a href="#certificado"><button>
+                    <span>
+                        <i class="material-symbols-outlined">social_leaderboard</i>
+                        <span>CERTIFICADOS</span>
+                    </span>
+                </button></a>       
+            </nav>
+        </aside>
+
+        <button class="button-mobile" onclick="toggleMenu()">
+            <i class="material-symbols-outlined">menu</i>
+            <span>Menu</span>
+        </button>
+
+        <nav class="menu-mobile" id="menu-mobile">
+            <button class="button-close" onclick="toggleMenu()">
+                <span>
+                    <i class="material-symbols-outlined">close</i>
+                </span>
+            </button>
+            <a href="#sobre"><button>
+                <span>
+                    <i class="material-symbols-outlined">person</i>
+                    <span class="mobile-text">SOBRE</span>
+                </span>
+            </button></a>
+            
+            <a href="#educacao"><button>
+                <span>
+                    <i class="material-symbols-outlined">school</i>
+                    <span class="mobile-text">EDUCAÇÃO</span>
+                </span>
+            </button></a>
+
+            <a href="#habilidade"><button>
+                <span>
+                    <i class="material-symbols-outlined">construction</i>
+                    <span class="mobile-text">HABILIDADES</span>
+                </span>
+            </button></a>
+            
+            <a href="#certificado"><button>
+                <span>
+                    <i class="material-symbols-outlined">social_leaderboard</i>
+                    <span class="mobile-text">CERTIFICADOS</span>
+                </span>
+            </button></a>       
+        </nav>
+
+        <main class="main">
+            <section class="box" id="sobre">
+                <div class="boxContent">
+                    <h1>ED <span class="surname">MORALES</span></h1>
+                    <div class="subtitle">ESTUDANTE DA ÁREA DE TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</div>  
+                    <p>É com grande entusiasmo que me dirijo a vocês para apresentar minha candidatura para a vaga de estágio em TI em sua empresa. Desde que descobri minha paixão por tecnologia, tenho trabalhado duro para me tornar um programador habilidoso e resolver problemas complexos.</p>         
+                </div>   
+                <div class="socialIcons">
+                    <a class="icon" href="mailto:morallesed@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="icon" href="https://wa.me/5511999818521"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="icon" href="https://www.linkedin.com/in/moralesed/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="icon" href="https://github.com/MorallesEd"><i class="fa-brands fa-github"></i></a>
+                </div>           
+            </section>
+
+            <section class="box" id="educacao">
+                <div class="boxContent">
+                    <h2>EDUCAÇÃO</h2>
+                    <div class="content">
+                        <div>
+                            <h3>UNIVERSIDADE CRUZEIRO DO SUL</h3>
+                            <p>GRADUAÇÃO EM TECNOLOGIA</p>
+                            <p>Análise e Desenvolvimento de Sistemas</p>                            
+                        </div>  
+                        <div class="itemContent">
+                            <span>Fevereiro 2019 - 2023</span>
+                        </div>   
+                    </div>         
+                </div>              
+            </section>
+
+            <section class="box" id="habilidade">
+                <div class="boxContent">
+                    <h2>HABILIDADES</h2>
+                    <div class="content">
+                        <div>
+                            <h3>LINGUAGENS E FERRAMENTAS DE PROGRAMAÇÃO</h3>
+                            <div class="toolsIcons">
+                                <div class="toolIcon">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                                <div class="toolIcon">
+                                    <i class="fa-brands fa-css3-alt"></i> 
+                                </div>
+                                <div class="toolIcon">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                                <div class="toolIcon">
+                                    <i class="fa-solid fa-terminal"></i>
+                                </div>
+                                <div class="toolIcon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class="toolIcon">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>                         
+                </div>              
+            </section>  
+            
+            <section class="box" id="certificado">
+                <div class="boxContent">
+                    <h2>CERTIFICAÇÕES</h2>
+                    <div class="content">
+                        <div>
+                            <div class="listCertificates">
+                                <div class="itemCertificate">
+                                    <p class="certificate"><i class="fa-solid fa-award"></i>Curso de HTML 5 - Curso em Video - 40hr</p>
+                                </div>                   
+                        
+                                <div class="itemCertificate">
+                                    <p class="certificate"><i class="fa-solid fa-award"></i>Curso de HTML 5 Introdução ao Front-end - TimTec - 40hr</p>
+                                </div>                            
+                            
+                                <div class="itemCertificate">
+                                    <p class="certificate"><i class="fa-solid fa-award"></i>Curso de JavaScript Conceitos e bibliotecas - TimTec - 40hr</p>
+                                </div>                            
+                            
+                                <div class="itemCertificate">
+                                    <p class="certificate"><i class="fa-solid fa-award"></i>Curso de Java - TimTec - 40hr</p>
+                                </div>                            
+                            
+                                <div class="itemCertificate">
+                                    <p class="certificate"><i class="fa-solid fa-award"></i>Curso de Lógica de Programação - JDev Treinamento online - 10hr</p>
+                                </div>                            
+                            
+                                <div class="itemCertificate">
+                                    <p class="certificate"><i class="fa-solid fa-award"></i>Curso de Github versionamento de código - JDev Treinamento online - 5hr</p>
+                                </div>                            
+                            </div>
+                        </div>    
+                    </div>  
+                    <div class="volta">
+                        <button id="backToTop"><i class="fa-solid fa-circle-chevron-up"></i></button> 
+                    </div>                           
+                </div>                              
+            </section>
+        </main>
+
+
+        <script src="./script.js"></script>
+    </body>
+</html>
+
